@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  background-color: black;
+}
+
+#main {
+  width: 100%;
+  padding-top: 70px;
+}
+
+#hero {
+    padding-top: 70px;
+  position: relative;
+  color: #fff;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+}
+
+#nav {
+  z-index: 10;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 40px;
+  color: #fff;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+#heading h1 {
+  margin-left: 40px;
+  opacity: 0.6;
+  line-height: 1;
+  font-size: 9vw;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#secondh1 {
+  padding-left: 150px;
+}
+
+.blocktest {
+  width: fit-content;
+}
+
+.blocktest h5 {
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 3;
+  font-weight: 550;
+  font-size: 15px;
+}
+
+#middle-heading {
+  margin-top: 50px;
+  text-align: right;
+  padding-right: 30px;
+}
+
+#middle-heading h5 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 0.5vw;
+}
+
+#hero-footer {
+  width: 100%;
+  position: absolute;
+  bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3vw;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+#hero-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#hero-footer i {
+  cursor: pointer;
+  font-size: 30px;
+}
+
+#second-page {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: #fff;
+  padding-top: 80px;
+  padding: 0 6vw 0 3vw;
+}
+
+.elem {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vw 3vw 3vw 0;
+  border-top: 1px solid lightgray;
+}
+
+.elem h1 {
+  opacity: 0.7;
+  font-weight: 600;
+  font-size: 80px;
+}
+
+.elem-last {
+  border-bottom: 1px solid lightgray;
+}
+
+.elem img {
+  display: none;
+  height: 140%;
+  position: absolute;
+}
+
+.about-section {
+  width: 80%;
+  height: 100vh;
+  color: #fff;
+  margin-left: 20vw;
+  padding: 230px 50px 0;
+}
+
+.about-area {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  align-items: start;
+}
+
+.about-text {
+  max-width: 423px;
+  font-size: 1rem;
+}
+
+.about-text h5 {
+  opacity: 0.6;
+}
+
+.about-text a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 5;
+  border: 1px solid white;
+  padding: 5px 20px;
+  border-radius: 50px;
+}
+
+.about-area img {
+  width: 200px;
+}
+
+.social {
+  padding-bottom: 100px;
+  padding-left: 3vw;
+  width: 100%;
+  color: #fff;
+}
+
+.social a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #fff;
+  padding: 20px 3vw;
+}
+
+.left-footer {
+  display: flex;
+  gap: 30px;
+}
+
+.right-footer {
+  display: flex;
+  gap: 30px;
+}
+
+.mini-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.break {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    padding: 0px 20px 0;
+  }
+  .about-area {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .break {
+    display: block;
+  }
+
+  .social {
+    padding-bottom: 100px;
+    padding-left: 20px;
+    font-size: 0.8rem;
+  }
+
+  .footer-section {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+
+  #second-page {
+    height: 80vh;
+  }
+
+  .elem h1 {
+    font-size: 50px;
+  }
+
+  #heading h1 {
+    font-size: 60px;
+  }
+
+  #secondh1 {
+    padding-left: 50px;
+  }
+
+  .blocktest h5 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+
+  .icon-set {
+    display: none;
+  }
+
+  #hero-footer a {
+    text-wrap: wrap;
+    line-height: 0;
+  }
+
+  #middle-heading {
+    margin-top: 90px;
+  }
+}
