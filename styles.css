@@ -257,7 +257,8 @@ body {
   }
 
   #second-page {
-    height: 60vh;
+    height: auto;
+    margin-bottom: 100px;
   }
 
   .elem h1 {
